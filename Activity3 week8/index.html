@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather App</h1>
+    </header>
+    
+    <main>
+      <div class="search-container">
+        <input type="text" id="city-input" placeholder="Enter city name">
+        <button id="search-btn">Get Weather</button>
+      </div>
+      
+      <div class="weather-container" id="weather-container">
+        <div class="weather-info hidden" id="weather-info">
+          <div class="city-name" id="city-name"></div>
+          <div class="weather-icon">
+            <img id="weather-icon" src="" alt="Weather icon">
+          </div>
+          <div class="temperature" id="temperature"></div>
+          <div class="description" id="description"></div>
+          <div class="details">
+            <div class="detail">
+              <span class="label">Feels like:</span>
+              <span id="feels-like"></span>
+            </div>
+            <div class="detail">
+              <span class="label">Humidity:</span>
+              <span id="humidity"></span>
+            </div>
+            <div class="detail">
+              <span class="label">Wind:</span>
+              <span id="wind"></span>
+            </div>
+          </div>
+        </div>
+        <div class="error-message hidden" id="error-message">
+          <p>City not found. Please try again.</p>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <p>Created with ❤️ | Weather data from OpenWeatherMap</p>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
