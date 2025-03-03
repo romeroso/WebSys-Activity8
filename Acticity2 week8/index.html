@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Space Exploration Quiz</h1>
+        <p>Test your knowledge about space exploration and astronomy!</p>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <ol class="questions">
+                <li class="question">
+                    <h3>Which planet is known as the Red Planet?</h3>
+                    <ul class="options">
+                        <li><label><input type="radio" name="q1" value="a"> Venus</label></li>
+                        <li><label><input type="radio" name="q1" value="b"> Mars</label></li>
+                        <li><label><input type="radio" name="q1" value="c"> Jupiter</label></li>
+                        <li><label><input type="radio" name="q1" value="d"> Mercury</label></li>
+                    </ul>
+                </li>
+                <li class="question">
+                    <h3>Who was the first person to walk on the Moon?</h3>
+                    <ul class="options">
+                        <li><label><input type="radio" name="q2" value="a"> Buzz Aldrin</label></li>
+                        <li><label><input type="radio" name="q2" value="b"> Yuri Gagarin</label></li>
+                        <li><label><input type="radio" name="q2" value="c"> Neil Armstrong</label></li>
+                        <li><label><input type="radio" name="q2" value="d"> John Glenn</label></li>
+                    </ul>
+                </li>
+                <li class="question">
+                    <h3>What is the largest planet in our solar system?</h3>
+                    <ul class="options">
+                        <li><label><input type="radio" name="q3" value="a"> Earth</label></li>
+                        <li><label><input type="radio" name="q3" value="b"> Saturn</label></li>
+                        <li><label><input type="radio" name="q3" value="c"> Jupiter</label></li>
+                        <li><label><input type="radio" name="q3" value="d"> Neptune</label></li>
+                    </ul>
+                </li>
+                <li class="question">
+                    <h3>Which spacecraft carried the first humans to the Moon?</h3>
+                    <ul class="options">
+                        <li><label><input type="radio" name="q4" value="a"> Apollo 11</label></li>
+                        <li><label><input type="radio" name="q4" value="b"> Voyager 1</label></li>
+                        <li><label><input type="radio" name="q4" value="c"> Sputnik 1</label></li>
+                        <li><label><input type="radio" name="q4" value="d"> Space Shuttle Columbia</label></li>
+                    </ul>
+                </li>
+                <li class="question">
+                    <h3>What is the name of our galaxy?</h3>
+                    <ul class="options">
+                        <li><label><input type="radio" name="q5" value="a"> Andromeda</label></li>
+                        <li><label><input type="radio" name="q5" value="b"> Milky Way</label></li>
+                        <li><label><input type="radio" name="q5" value="c"> Triangulum</label></li>
+                        <li><label><input type="radio" name="q5" value="d"> Sombrero</label></li>
+                    </ul>
+                </li>
+            </ol>
+            <button id="submit-btn">Submit Answers</button>
+        </div>
+
+        <div id="results" class="hidden">
+            <h2>Your Results</h2>
+            <p>You scored <span id="score">0</span> out of 5</p>
+            <div id="feedback"></div>
+            <button id="retry-btn">Try Again</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Space Quiz | Created for educational purposes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
